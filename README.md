@@ -232,6 +232,10 @@ Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICEN
 
 ## 🇺🇸 English
 
+### 🖼️ Hero Image
+
+![Project Hero Image](hero_image.png)
+
 ### 📊 Overview
 
 This project represents the capstone work for the **IBM Business Analyst Professional Certificate**, demonstrating advanced competencies in business analysis, process modeling, requirements gathering, and stakeholder management. The developed platform offers a complete solution for business analysis and strategic decision support.
