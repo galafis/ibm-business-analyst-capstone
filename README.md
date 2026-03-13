@@ -1,299 +1,97 @@
-# 🚀 Ibm Business Analyst Capstone
+# IBM Business Analyst Capstone
 
-> IBM Business Analyst Professional Certificate Capstone Project
+<div align="center">
 
-[![Python](https://img.shields.io/badge/Python-3.12-3776AB.svg)](https://img.shields.io/badge/)
-[![NumPy](https://img.shields.io/badge/NumPy-1.26-013243.svg)](https://img.shields.io/badge/)
-[![Pandas](https://img.shields.io/badge/Pandas-2.2-150458.svg)](https://img.shields.io/badge/)
-[![Plotly](https://img.shields.io/badge/Plotly-5.18-3F4F75.svg)](https://img.shields.io/badge/)
-[![scikit--learn](https://img.shields.io/badge/scikit--learn-1.4-F7931E.svg)](https://img.shields.io/badge/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.31-FF4B4B.svg)](https://img.shields.io/badge/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+![IBM](https://img.shields.io/badge/IBM-052FAD?style=for-the-badge&logo=ibm&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg?logo=docker)](Dockerfile)
 
-[English](#english) | [Português](#português)
+**[PT-BR](#sobre-o-projeto) | [English](#about-the-project)**
+
+</div>
 
 ---
+
+<a name="sobre-o-projeto"></a>
+
+## Sobre o Projeto
+
+> Projeto Capstone do certificado profissional **IBM Business Analyst** no [Coursera](https://www.coursera.org/)
+
+Este projeto aplica tecnicas de analise de negocios para coletar, documentar e analisar requisitos de negocio, demonstrando competencias em levantamento de requisitos, documentacao de processos e analise de dados com Python.
+
+---
+
+## Pipeline de Analise de Negocios
+
+```mermaid
+flowchart LR
+    A[Levantamento\\nde Requisitos] --> B[Documentacao\\nde Processos]
+    B --> C[Analise\\nde Dados]
+    C --> D[Visualizacao\\ne Relatorios]
+    D --> E[Recomendacoes\\nEstrategicas]
+
+    style A fill:#052FAD,color:#fff,stroke:#031f7a
+    style C fill:#3776AB,color:#fff,stroke:#2a5a8a
+    style E fill:#155724,color:#fff,stroke:#0e3a18
+```
+
+---
+
+## Conteudo do Repositorio
+
+| Arquivo / Pasta | Descricao |
+|---|---|
+| `src/main_platform.py` | Plataforma principal de analise |
+| `docs/business_requirements.md` | Documento de requisitos de negocio |
+| `docs/api_documentation.md` | Documentacao da API |
+| `docs/user_guide.md` | Guia do usuario |
+| `tests/` | Testes unitarios e de performance |
+| `LICENSE` | Licenca MIT |
+
+## Como Executar
+
+```bash
+git clone https://github.com/galafis/ibm-business-analyst-capstone.git
+cd ibm-business-analyst-capstone
+pip install -r requirements.txt
+python src/main_platform.py
+```
+
+## Aplicacao na Industria
+
+A analise de negocios e essencial para alinhar solucoes de TI com objetivos estrategicos, garantindo que projetos entreguem valor mensuravel para a organizacao.
+
+---
+
+<a name="about-the-project"></a>
 
 ## English
 
-### 🎯 Overview
+### About the Project
 
-**Ibm Business Analyst Capstone** is a production-grade Python application that showcases modern software engineering practices including clean architecture, comprehensive testing, containerized deployment, and CI/CD readiness.
+> Capstone project from the **IBM Business Analyst Professional Certificate** on [Coursera](https://www.coursera.org/)
 
-The codebase comprises **122 lines** of source code organized across **4 modules**, following industry best practices for maintainability, scalability, and code quality.
+This project applies business analysis techniques to collect, document, and analyze business requirements, demonstrating competencies in requirements gathering, process documentation, and data analysis with Python.
 
-### ✨ Key Features
-
-- **🏗️ Object-Oriented**: 1 core classes with clean architecture
-- **📐 Clean Architecture**: Modular design with clear separation of concerns
-- **🧪 Test Coverage**: Unit and integration tests for reliability
-- **📚 Documentation**: Comprehensive inline documentation and examples
-- **🔧 Configuration**: Environment-based configuration management
-
-### 🏗️ Architecture
-
-```mermaid
-graph LR
-    subgraph Input["📥 Input"]
-        A[Raw Data]
-        B[Feature Config]
-    end
-    
-    subgraph Pipeline["🔬 ML Pipeline"]
-        C[Preprocessing]
-        D[Feature Engineering]
-        E[Model Training]
-        F[Evaluation]
-    end
-    
-    subgraph Output["📤 Output"]
-        G[Trained Models]
-        H[Metrics & Reports]
-        I[Predictions]
-    end
-    
-    A --> C --> D --> E --> F
-    B --> D
-    F --> G
-    F --> H
-    G --> I
-    
-    style Input fill:#e1f5fe
-    style Pipeline fill:#f3e5f5
-    style Output fill:#e8f5e9
-```
-
-### 🚀 Quick Start
-
-#### Prerequisites
-
-- Python 3.12+
-- pip (Python package manager)
-
-#### Installation
+### How to Run
 
 ```bash
-# Clone the repository
 git clone https://github.com/galafis/ibm-business-analyst-capstone.git
 cd ibm-business-analyst-capstone
-
-# Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
 pip install -r requirements.txt
+python src/main_platform.py
 ```
-
-#### Running
-
-```bash
-# Run the application
-python src/main.py
-```
-
-### 🧪 Testing
-
-```bash
-# Run all tests
-pytest
-
-# Run with coverage report
-pytest --cov --cov-report=html
-
-# Run specific test module
-pytest tests/test_main.py -v
-
-# Run with detailed output
-pytest -v --tb=short
-```
-
-### 📁 Project Structure
-
-```
-ibm-business-analyst-capstone/
-├── docs/          # Documentation
-│   ├── api_documentation.md
-│   ├── business_requirements.md
-│   └── user_guide.md
-├── src/          # Source code
-│   └── main_platform.py
-├── tests/         # Test suite
-│   ├── __init__.py
-│   ├── performance_test.py
-│   └── test_platform.py
-├── LICENSE
-├── README.md
-└── requirements.txt
-```
-
-### 🛠️ Tech Stack
-
-| Technology | Description | Role |
-|------------|-------------|------|
-| **Python** | Core Language | Primary |
-| **NumPy** | Numerical computing | Framework |
-| **Pandas** | Data manipulation library | Framework |
-| **Plotly** | Interactive visualization | Framework |
-| **scikit-learn** | Machine learning library | Framework |
-| **Streamlit** | Data app framework | Framework |
-
-### 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-### 👤 Author
-
-**Gabriel Demetrios Lafis**
-- GitHub: [@galafis](https://github.com/galafis)
-- LinkedIn: [Gabriel Demetrios Lafis](https://linkedin.com/in/gabriel-demetrios-lafis)
 
 ---
 
-## Português
+## Licenca | License
 
-### 🎯 Visão Geral
+Este projeto esta licenciado sob a [Licenca MIT](LICENSE). | This project is licensed under the [MIT License](LICENSE).
 
-**Ibm Business Analyst Capstone** é uma aplicação Python de nível profissional que demonstra práticas modernas de engenharia de software, incluindo arquitetura limpa, testes abrangentes, implantação containerizada e prontidão para CI/CD.
+---
 
-A base de código compreende **122 linhas** de código-fonte organizadas em **4 módulos**, seguindo as melhores práticas do setor para manutenibilidade, escalabilidade e qualidade de código.
-
-### ✨ Funcionalidades Principais
-
-- **🏗️ Object-Oriented**: 1 core classes with clean architecture
-- **📐 Clean Architecture**: Modular design with clear separation of concerns
-- **🧪 Test Coverage**: Unit and integration tests for reliability
-- **📚 Documentation**: Comprehensive inline documentation and examples
-- **🔧 Configuration**: Environment-based configuration management
-
-### 🏗️ Arquitetura
-
-```mermaid
-graph LR
-    subgraph Input["📥 Input"]
-        A[Raw Data]
-        B[Feature Config]
-    end
-    
-    subgraph Pipeline["🔬 ML Pipeline"]
-        C[Preprocessing]
-        D[Feature Engineering]
-        E[Model Training]
-        F[Evaluation]
-    end
-    
-    subgraph Output["📤 Output"]
-        G[Trained Models]
-        H[Metrics & Reports]
-        I[Predictions]
-    end
-    
-    A --> C --> D --> E --> F
-    B --> D
-    F --> G
-    F --> H
-    G --> I
-    
-    style Input fill:#e1f5fe
-    style Pipeline fill:#f3e5f5
-    style Output fill:#e8f5e9
-```
-
-### 🚀 Início Rápido
-
-#### Prerequisites
-
-- Python 3.12+
-- pip (Python package manager)
-
-#### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/galafis/ibm-business-analyst-capstone.git
-cd ibm-business-analyst-capstone
-
-# Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-#### Running
-
-```bash
-# Run the application
-python src/main.py
-```
-
-### 🧪 Testing
-
-```bash
-# Run all tests
-pytest
-
-# Run with coverage report
-pytest --cov --cov-report=html
-
-# Run specific test module
-pytest tests/test_main.py -v
-
-# Run with detailed output
-pytest -v --tb=short
-```
-
-### 📁 Estrutura do Projeto
-
-```
-ibm-business-analyst-capstone/
-├── docs/          # Documentation
-│   ├── api_documentation.md
-│   ├── business_requirements.md
-│   └── user_guide.md
-├── src/          # Source code
-│   └── main_platform.py
-├── tests/         # Test suite
-│   ├── __init__.py
-│   ├── performance_test.py
-│   └── test_platform.py
-├── LICENSE
-├── README.md
-└── requirements.txt
-```
-
-### 🛠️ Stack Tecnológica
-
-| Tecnologia | Descrição | Papel |
-|------------|-----------|-------|
-| **Python** | Core Language | Primary |
-| **NumPy** | Numerical computing | Framework |
-| **Pandas** | Data manipulation library | Framework |
-| **Plotly** | Interactive visualization | Framework |
-| **scikit-learn** | Machine learning library | Framework |
-| **Streamlit** | Data app framework | Framework |
-
-### 🤝 Contribuindo
-
-Contribuições são bem-vindas! Sinta-se à vontade para enviar um Pull Request.
-
-### 📄 Licença
-
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
-
-### 👤 Autor
-
-**Gabriel Demetrios Lafis**
-- GitHub: [@galafis](https://github.com/galafis)
-- LinkedIn: [Gabriel Demetrios Lafis](https://linkedin.com/in/gabriel-demetrios-lafis)
+Developed by [Gabriel Demetrios Lafis](https://github.com/galafis)
